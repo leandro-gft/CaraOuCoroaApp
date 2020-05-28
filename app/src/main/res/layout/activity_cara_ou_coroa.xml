@@ -5,39 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#65BC8D"
-    tools:context=".MainActivity">
+    tools:context=".CaraOuCoroaActivity">
 
     <ImageView
-        android:id="@+id/imgLogo"
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
-        android:layout_marginLeft="45dp"
-        android:layout_marginEnd="45dp"
-        android:layout_marginRight="45dp"
-        android:src="@drawable/logo"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:background="#65BC8D"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/moeda_cara" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="70dp"
-        android:layout_marginLeft="70dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginRight="70dp"
-        android:background="@drawable/botao_jogar"
+        android:background="@drawable/botao_voltar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
-
-
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
