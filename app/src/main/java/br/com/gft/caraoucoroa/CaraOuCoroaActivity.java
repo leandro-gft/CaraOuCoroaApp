@@ -18,8 +18,12 @@ public class CaraOuCoroaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cara_ou_coroa);
 
         imgCaraCoroa = findViewById(R.id.imgCaraCoroa);
-        Random random = new Random();
-        imgCaraCoroa.setImageResource(random.nextInt(R.drawable.moeda_coroa-R.drawable.moeda_cara+1)+R.drawable.moeda_cara);
+
+        Bundle dados = getIntent().getExtras();
+        int numeroImg = dados.getInt("numero");
+
+        imgCaraCoroa.setImageResource(numeroImg);
+
     }
 
     public void voltar(View view){
