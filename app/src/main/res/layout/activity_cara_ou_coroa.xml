@@ -8,11 +8,11 @@
     tools:context=".CaraOuCoroaActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgCaraCoroa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#65BC8D"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/btnVoltar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -20,13 +20,14 @@
         app:srcCompat="@drawable/moeda_cara" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnVoltar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:onClick="voltar"
         android:background="@drawable/botao_voltar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imgCaraCoroa" />
 </androidx.constraintlayout.widget.ConstraintLayout>
